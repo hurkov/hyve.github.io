@@ -1,0 +1,1239 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(60%);
+    transition: all 0.7s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(60%);
+    transition: all 1.2s;
+}
+.show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.layer{
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+}
+
+.header_layer{
+    height: 65px;
+    width: 65px;
+}
+
+.header{
+    font-size: 16px;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.211);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header_content{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo{
+    color: white;
+}
+
+.header_menu li{
+    display: inline-block;
+}
+
+.header_menu li a{
+    color: white;
+    display: block;
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header_menu li a:hover{
+    color: rgb(255,150,0);
+    transition: all 0.5s;
+}
+
+.header_icons{
+    display: block;
+    align-items: center;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 25px;
+    border-radius: 20px;
+}
+
+.header_icons svg{
+    position: relative;
+    top: 3px;
+    font-weight: 700;
+    transition: all 1s;
+}
+
+.header_icons svg:hover{
+    fill: rgb(255,150,0);
+}
+.header_icons a{
+    color: black;
+    font-size: 14px;
+}
+
+.hero{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    top: 50px;
+    padding-top: 275px ;
+}
+
+.hero_content{
+    align-items: center;
+    padding-top: 75px;
+
+}
+.hero_title{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.hero_title.gradient{
+    color: rgb(255,150,0);
+    color: linear-gradient(135deg, rgba(255,150,0,1) 0%, rgba(255,248,0,1) 100%);
+}
+
+.hero_describe{
+    line-height: 24px;
+    max-width: 575px;
+    color: rgb(200, 200, 200);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.hero_scroll_rec{
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    max-width: 175px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    z-index: 666;
+}
+
+.hero_scroll_rec span{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero_layer{
+    height: 600px;
+    width: 600px;
+    position: relative;
+    padding: 40px;
+    margin-right: 200px;
+    padding-right: 75px;
+}
+
+.crypto{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 200px;
+    padding-top: 175px;
+    z-index: 888;
+}
+
+.crypto_hero{
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+    margin-left: 150px;
+}
+
+.crypto_hero h2{
+    font-weight: 600;
+}
+
+.crypto_box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.coin{
+    position: relative;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 175px;
+    width: 400px;
+    padding: 25px;
+    border-radius: 20px;
+    justify-content: space-between;
+    row-gap: 10px;
+    background: linear-gradient(110.1deg, rgb(241, 115, 30) 18.9%, rgb(231, 29, 54) 90.7%);
+}
+
+.value{
+    color: white;
+}
+
+.value h4{
+    line-height: 5px;
+}
+
+.valueinfo 
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.valueinfo h5{
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.coin h4{
+    max-width: 10px;
+}
+
+.tagcurr{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+
+.btc{
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+.btcper{
+    color: white;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.eth{
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.xrp{
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.scroll{
+    position: relative;
+    top: -50px;
+}
+
+.scroll_text{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: -200px;
+    margin-left: 25px;
+    z-index: -888;
+    padding-bottom: 300px;
+}
+
+.scroll_text span{
+    color: rgb(255,150,0);
+}
+
+.uppercase{
+    position: sticky;
+    top: -50px;
+    width: 100%;
+    z-index: 777;
+    margin: 0;
+    padding: 0;
+    left: -10px;
+}
+
+.upperadd{
+    position: sticky;
+    margin-top: 200px;
+    width: 90%;
+    z-index: 778;
+    margin: 0;
+    padding: 0;
+    left: 75px;
+}
+
+.bottomcase{
+    position: sticky;
+    top: 800px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.calcontent{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    top: -50px;
+    margin: 0;
+    padding-bottom: 200px;
+}
+
+.text_calcontent{
+    max-width: 450px;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+
+.calcontent_more{
+    background: linear-gradient(110.1deg, rgb(241, 115, 30) 18.9%, rgb(231, 29, 54) 90.7%);
+}
+
+.grad{
+    font-size: 20px;
+    font-weight: 500;
+    color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(
+        -45deg,
+        #ee7752 20%,
+        #e73c7e 30%,
+        #23a6d5 70%,
+        #23d5ab 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.title_calcontent{
+    align-items: center;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.title_calcontent span{
+    color: rgb(255,150,0);
+}
+
+.row{
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.item_calcontent button{
+    width: 100px;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255,150,0);
+    border: 1px solid black;
+    color: black;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    left: 50px;
+    top: 25px;
+    margin-bottom: 25px;
+    transition: all 1s;
+}
+
+.item_calcontent button:hover{
+    background-color: rgb(255,150,0);
+    border: 1px solid black;
+    color: white;
+}
+
+.row h3{
+    position: relative;
+    font-size: 16px;
+    color: #444;
+    top: 30px;
+}
+
+.row input{
+    font-size: 20px;
+    color: white;
+}
+
+.row input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.row input[type=text]:focus {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(255,150,0);
+    outline: none;
+}
+
+.col{
+    display: flex;
+    position: relative;
+    padding: 0;
+}
+
+.col input{
+    margin-right: 75px;
+}
+
+select{
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 50%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+.gallery_calcontent h2{
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box_cards_calcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hard_point{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    top: -50px;
+}
+
+.item_blocks{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+.item_blocks h3{
+    color: rgba(255,150,0);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item_blocks p{
+    position: relative;
+    padding: 0;
+    top: -25px;
+}
+
+.item_blocks svg{
+    height: 30px;
+    width: 30px;
+}
+
+.blocks{
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hard_point_text{
+    max-width: 400px;
+}
+.hard_point_text h1 span{
+    color: rgba(255,150,0);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.button_point{
+    background-color: rgb(255,150,0);
+    color: black;
+    width: 100px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+.sponsor_list svg{
+    height: 75px;
+    width: 75px;
+    color: rgb(145, 145, 145);
+    opacity: 80%;
+    padding: 25px;
+    transition: 0.8s ease-in-out;
+}
+
+.sponsor_list svg:hover{
+    color: white;
+    opacity: 1;
+}
+
+.sponsor_list{
+    position: relative;
+    background-color: black;
+    top: -50px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    padding-top: 75px;
+}
+
+.prefooter_box{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    top: -50px;
+    padding-bottom: 150px;
+    border-radius: 0% 0% 20px 20px;
+}
+
+.prefooter_hero span{
+    color: rgb(255,150,0);
+}
+
+.prefooter_hero{
+    display: flex;
+    flex-direction: column;
+    max-width: 310px;
+    margin-left: 175px;
+    justify-content: center;
+}
+
+.prefooter_hero h1{
+    font-size: 38px;
+}
+
+.prefooter_hero p{
+    position: relative;
+    top: -25px;
+}
+
+.prefooter_box button{
+    background-color: rgb(255,150,0);
+    color: black;
+    width: 125px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+.prefooter_card{
+    color: black;
+    padding: 25px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+}
+
+.prefooter_card img{
+    border-radius: 16px;
+}
+
+.footter{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    top: -50px;
+
+}
+
+.fir_cardfootter{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.title_footter{
+    display: flex;
+}
+
+.fir_cardfootter p{
+    font-size: 12px;
+    color: rgb(215, 215, 215);
+}
+
+.list_footter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.item_list{
+    font-weight: 400;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.item_list h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.item_list{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.item_list ul{
+    justify-content: center;
+    align-items: center;
+}
+
+.item_list a{
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+.item_list a:hover{
+    color: rgb(255,150,0);
+}
+
+.end_footter{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    padding-top: 50px;
+}
+
+.end_footter p{
+    font-size: 12px;
+    color: rgb(215, 215, 215);
+}
+
+.disclamer p{
+    font-size: 8px;
+    color: rgb(215, 215, 215);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 5px;
+}
+
+.reply{
+    color: white;
+    padding-top: 10px;
+    margin-left: 12px;
+}
+
+.signupage{
+    background-color: transparent;
+}
+
+.signup_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+.signup_card{
+    padding-right: 300px;
+    padding-top: 200px;
+    color: white;
+    font-size: 12px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.signup_card span{
+    color: rgb(251, 193, 46);
+}
+
+.signup_container{
+    position: relative;
+    margin-left: 250px;
+    margin-top: 75px;
+    width: 600px;
+    height: 500px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    
+}
+
+.signup_container input{
+    background-color: transparent;
+    border: 1.5px solid #4b4b4b;
+    height: 50px;
+    width: 350px;
+    border-radius: 3px;
+    margin-left: 15px;
+    transition: 1s;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 10px;
+    outline: none;
+}
+
+.signup_container input:hover{
+    border: 1px solid rgb(255,150,0);
+    background-color: transparent;
+}
+
+.signup_container input:focus{
+    border: 1px solid rgb(255,150,0);
+}
+
+.signup_container h2{
+    font-size: 28px;
+    font-weight: 500;
+    padding-left: 25px;
+}
+
+.signup_container h2 span{
+    color: rgb(255,150,0);
+}
+
+.signup_container h4{
+    font-size: 14px;
+    font-family: 400;
+    position: relative;
+    margin-left: 15px;
+}
+
+.signup_container p{
+    font-size: 12px;
+    font-family: 500;
+    line-height: 5px;
+}
+
+.signup_card img{
+    width: 140%;
+}
+
+.termins{
+    padding-top: 25px;
+    margin-left: 15px;
+}
+
+.next{
+    width: 375px;
+    height: 50px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgb(255,150,0);
+    border-radius: 3px;
+    border: none;
+    margin-top: 15px;
+}
+
+.google{
+    position: absolute;
+    opacity: 0;
+}
+
+.apple{
+    position: absolute;
+    opacity: 0;
+}
+
+.share_box{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+.share_content span{
+    color: rgb(241, 115, 30);
+}
+
+.sharecode{
+    height: 250px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.tradingview-widget-container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+    background-color: transparent;
+}
+
+.two{
+    display: none;
+    flex-direction: column;
+    max-width: 200px;
+    padding-top: 50px;
+}
+
+.signup_card{
+    margin-left: 25px;
+}
+
+@media (max-width: 1440px) {
+    .hero_layer img{
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 1710px) {
+    .signup_card img{
+        width: 100%;
+    }
+
+    .hero_title{
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .hero_describe{
+        line-height: 24px;
+        max-width: 575px;
+        font-size: 18px;
+    }
+
+    .hero_layer{
+        height: 500px;
+        width: 500px;
+        position: relative;
+        padding: 40px;
+        margin-right: 200px;
+        padding-right: 75px;
+    }
+
+    .coin{
+        height: 150px;
+        width: 350px;
+    }
+
+    .tagcurr{
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 12px;
+    }
+    
+    
+    .btc{
+        font-size: 28px;
+    }
+    
+    .btcper{
+        font-size: 16px;
+    }
+    
+    .eth{
+        font-size: 28px;
+    }
+    
+    .xrp{
+        font-size: 28px;
+    }
+
+    .valueinfo h5{
+        padding-top: 30px;
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 1155px){
+    .hero{
+        top: 25px;
+    }
+
+    .hero_layer{
+        height: 350px;
+        width: 350px;
+        position: relative;
+        padding: 40px;
+        margin-right: 200px;
+    }
+}
+@media (max-width: 1024px) {
+    .layer{
+        width: 126.8%;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .hero_content{
+        padding-left: 50px;
+    }
+    .hero{
+        margin-left: 50px;
+        top: 0px;
+        padding-top: 200px ;
+    }
+
+    .layer{
+        width: 1075px;
+    }
+
+    .hero_scroll_rec{
+        position: relative;
+        display: flex;
+        margin-top: 100px;
+        max-width: 175px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .hero_content{
+        margin-top: 50px;
+    }
+
+    .hero_layer{
+        left: 200px;
+        top: 10px;
+        height: 350px;
+        width: 350px;
+        margin-right: 150px;
+    }
+
+    .hero_title{
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .hero_describe{
+        line-height: 18px;
+        max-width: 500px;
+        color: rgb(200, 200, 200);
+        font-size: 14px;
+    }
+
+    .crypto_box{
+    justify-content: space-around;
+    }
+    
+    .coin{
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 125px;
+        width: 250px;
+        margin: 0;
+    }
+
+    .crypto_hero{
+        margin: 75px;
+    }
+
+    .uppercase{
+        position: sticky;
+    top: 45px;
+    width: 100%;
+    z-index: 777;
+    margin: 0;
+    padding: 0;
+    left: -10px;
+    }
+
+    .bottomcase{
+        position: sticky;
+        top: 815px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero{
+        justify-content: space-around;
+    }
+
+    .hero_layer{
+        height: 300px;
+        width: 300px;
+        position: relative;
+        padding: 40px;
+        margin-right: 200px;
+        padding-right: 175px;
+    }
+
+    .hero_content{
+        width: 700px;
+        padding: 0;
+    }
+
+    .signup_card{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_menu{
+        position: absolute;
+        top: 30px;
+        background-color: rgba(0, 0, 0, 0.221);
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        height: 0vh;
+        overflow: hidden;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    }
+
+    .header_menu li{
+        width: 100%;
+        border-bottom: 1px solid #444;
+    }
+
+    .header_menu li a{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding-left: 50px;
+    }
+
+    .menu-open .header_menu{
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .icon_hamburger{
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon_hamburger span{
+        height: 3px;
+        border-radius: 20px;
+        width: 20px;
+        background-color: white;
+        margin-top: 8px;
+        position: relative;
+        top: -4px;
+    }
+
+    .header svg{
+        top: 0;
+    }
+
+    .header_icons{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .header_layer{
+        height: 40px;
+        width: 40px;
+        margin-left: 15px;
+    }
+
+    .scroll{
+        display: none;
+    }
+    
+    .layer{
+        width: 100%;
+    }
+
+    .hero_layer{
+        display: none;
+    }
+
+    .hero_describe{
+        font-size: 18px;
+        color: white;
+    }
+
+    .hero_content{
+        max-width: 400px;
+    }
+
+    .hero{
+        justify-content: flex-start;
+        margin-left: 100px;
+    }
+
+    .calcontent{
+        flex-direction: column;
+    }
+
+    .hard_point{
+        flex-direction: column;
+    }
+
+    .hero_scroll_rec{
+        top: 125px;
+        z-index: 999;
+    }
+
+    .text_calcontent{
+        margin-left: 100px;
+    }
+
+    .item_calcontent{
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .blocks{
+        margin-left: 35px;
+    }
+
+    .hard_point_text{
+        margin-left: 100px;
+    }
+
+    .blocks{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .remove{
+        display: none;
+    }
+    
+    .signup_container{
+        margin-left: 150px;
+    }
+    
+    .prefooter_box{
+        flex-direction: column-reverse;
+    }
+
+    .end_footter{
+        display: none;
+    }
+    
+    .fir_cardfootter{
+        margin-left: 20px;
+    }
+
+    .item_list a{
+        font-size: 12px;
+    }
+
+    .signup svg{
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    .blocks{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .crypto_box{
+        flex-direction: column;
+    }
+
+    .text_calcontent{
+        margin-left: 0px;
+    }
+
+    .item_blocks{
+        padding: 0;
+    }
+}
